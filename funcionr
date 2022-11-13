@@ -1,0 +1,8 @@
+nclases <- function(dat){
+  r <- max(dat) - min(dat)
+  n <- length(dat)
+  k <- 1 + round(3.322*log10(n), 0)
+  a = r/k
+  resp <- c(r, n, k, a)
+  return(resp)
+}
