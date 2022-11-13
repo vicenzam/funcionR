@@ -1,4 +1,5 @@
 nclases <- function(dat){
+  #Función para encontrar rango, número de clases y ancho de clases
   r <- max(dat) - min(dat)
   n <- length(dat)
   k <- 1 + round(3.322*log10(n), 0)
